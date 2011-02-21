@@ -1,0 +1,28 @@
+body{
+opacity:1;
+background-image: url("../images/shop1.jpg");
+-moz-background-size: cover;
+background-repeat:no-repeat;
+back
+}
+
+h1{
+font-size: 60px;
+font-family: Helvetica,serif;
+text-align: center;
+
+}
+
+#lefty{
+margin-left:13%;
+font-size:20px;
+margin-top:10px;
+}
+
+input{
+font-size: 20px;
+}
+
+select{
+font-size:20px;
+}

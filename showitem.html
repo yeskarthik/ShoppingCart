@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Your Selection </title>
+	</head>
+	<body>
+		<p style="text-align:center"><img src="images/adidas.jpg" id="image"/></p>
+		
+		<script type="text/javascript">
+			function gup( name )
+			{
+  				name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  				var regexS = "[\\?&]"+name+"=([^&#]*)";
+  				var regex = new RegExp( regexS );
+  				var results = regex.exec( window.location.href );
+  				if( results == null )
+    				return "";
+  				else
+    				return results[1];
+			}
+			
+			function getImage()
+			{
+				var image='images/'+gup('n')+'.jpg';
+				return image;
+			}
+			document.getElementById("image").src=getImage();
+		</script>
+	</body>
+</html>
+	
