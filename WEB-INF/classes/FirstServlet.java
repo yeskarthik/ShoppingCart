@@ -10,23 +10,21 @@ public class FirstServlet extends HttpServlet
   {
         response.setContentType("text/html");
 	HttpSession session=request.getSession();
+	int visits=0;
 	if(session.isNew())
 	{
-	//	visits++;
+		visits++;
 	}
       String name=request.getParameter("Name");
-
-	request.setAttribute("Name",name);
-     
-    PrintWriter out = response.getWriter();
-
-    out.println("<title>Details</title>" +
-       "<body bgcolor=FFFFFF>");
-
-    out.println("<h2>Personal Details:</h2>");
-    out.println("<h1> Name : " + name + "</h1>");
-
-    out.println("<P>Return to <A HREF=\"index.html\">Form</A>");
-    out.close();
+		request.setAttribute("Name",name);
+	   Cookie cookie[] = request.getCookies();
+		
+	session.setAttribute("Name",name);
+		
+		
+	 RequestDispatcher req=request.getRequestDispatcher("index1.jsp");
+	    req.forward(request,response);
   }
+	
+		
 }

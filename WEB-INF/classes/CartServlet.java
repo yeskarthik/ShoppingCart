@@ -15,6 +15,7 @@ public class CartServlet extends HttpServlet {
 
 		String selected=request.getParameter("item");
 		
+		
 		request.setAttribute("item",selected);
 	
 		String qty=request.getParameter("quantity");
@@ -31,12 +32,11 @@ public class CartServlet extends HttpServlet {
 		
 		out.println("Quantity : " + qty);
 
-		out.println("</html>");
-
-		//out.println("<script type='text/javascript'> window.alert('Added to cart');</script>");
 	
 		response.addCookie(cookie);
-				
-		response.sendRedirect("index.html");
+
+			
+	 RequestDispatcher req=request.getRequestDispatcher("index1.jsp");
+	    req.forward(request,response);
 	}
 }

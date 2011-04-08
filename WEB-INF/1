@@ -41,8 +41,7 @@
 	<servlet-class>FirstServlet</servlet-class>
 	</servlet>
      <servlet-mapping>
-	<servlet-name>FirstServlet</servlet-name>
-        <url-pattern>/FirstServlet</url-pattern>
+
     </servlet-mapping> 
 
 	<servlet>
@@ -54,16 +53,15 @@
         <url-pattern>/CartServlet</url-pattern>
     </servlet-mapping> 
 
-	
 	<servlet>
 	<servlet-name>CalcServlet</servlet-name>
 	<servlet-class>CalcServlet</servlet-class>
 	</servlet>
-     <servlet-mapping>
-        <servlet-name>CalcServlet</servlet-name>
-        <url-pattern>/CalcServlet</url-pattern>
-    </servlet-mapping> 
 
-	 </web-app>
+	<servlet-mapping>
+	<servlet-name>CalcServlet</servlet-name>
+	<url-pattern>/CalcServlet</url-pattern>
+	</servlet-mapping>
+    </web-app>
 
 

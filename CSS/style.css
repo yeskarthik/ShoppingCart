@@ -23,6 +23,29 @@ input{
 font-size: 20px;
 }
 
+table,td,tr{
+text-align:center;
+font-size:17px;
+line-height:7px;
+margin-top: 3px;
+border : 15px;
+padding: 14px;
+}
+
+
 select{
 font-size:20px;
+}
+
+#nametext{
+font-size: 30px;
+font-family: Georgia,serif;
+text-align: center;
+}
+
+#key
+{
+font-size: 15px;
+font-family: Georgia,serif;
+text-align: center;
 }
